@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Abou1t</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="star.png" id="stars" />
+      <img src="moon.png" id="moon" />
+      <img src="mountian_behind.png" id="mountian_behind" />
+      <h2 id="text">Sharingan Moon</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="mountain.png" id="mountain" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Medeelel</h2>
+      <p>
+        modi! Fugit harum et nam quos! Voluptas velit ratione vel ad vero in,
+        recusandae libero consequatur eligendi officiis sapiente aperiam
+        laudantium temporibus nostrum dolorum? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Quas doloremque eius repellat laudantium
+        perspiciatis praesentium illo consectetur impedit? Ducimus aperiam
+        similique esse nobis autem, quo assumenda? Animi repellat pariatur ad
+        nihil, alias harum in modi delectus laudantium fuga omnis labore!
+        <br /><br />
+        um a ipsum laborum laudantium dicta autem assumenda accusamus.
+        Asperiores eum ullam voluptates amet officia similique excepturi,
+        cupiditate autem laborum obcaecati, quam dolor pariatur dicta id nemo
+        adipisci quaerat veniam quo et assumenda deleniti! Possimus facere
+        ducimus nostrum numquam dolorem? Laboriosam, nam. Cumque illum laborum
+        omnis earum laudantium nemo sed, aliquid repellendus molestiae molestias
+        debitis similique iste, facilis fugiat architecto optio non veniam iusto
+        dicta, reprehenderit nisi dolorem unde saepe consectetur? A, soluta.
+        <br /><br />
+        modi! Fugit harum et nam quos! Voluptas velit ratione vel ad vero in,
+        recusandae libero consequatur eligendi officiis sapiente aperiam
+        laudantium temporibus nostrum dolorum? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Quas doloremque eius repellat laudantium
+        perspiciatis praesentium illo consectetur impedit? Ducimus aperiam
+        similique esse nobis autem, quo assumenda? Animi repellat pariatur ad
+        nihil, alias harum in modi delectus l<br /><br />
+        um a ipsum laborum laudantium dicta autem assumenda accusamus.
+        Asperiores eum ullam voluptates amet officia similique excepturi,
+        cupiditate autem laborum obcaecati, quam dolor pariatur dicta id nemo
+        adipisci quaerat veniam quo et assumenda deleniti! Possimus facere
+        ducimus nostrum numquam dolorem? Laboriosam, nam. Cumque illum laborum
+        omnis earum laudantium nemo sed, aliquid repellendus molestiae molestias
+        debitis similique iste, facilis fugiat architecto optio non veniam iusto
+        dicta, reprehenderit nisi dolorem unde saepe consectetur? A, soluta.
+        <br /><br />
+        modi! Fugit harum et nam quos! Voluptas velit ratione vel ad vero in,
+        recusandae libero consequatur eligendi officiis sapiente aperiam
+        laudantium temporibus nostrum dolorum? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Quas doloremque eius repellat laudantium
+        perspiciatis praesentium illo consectetur impedit? Ducimus aperiam
+        similique esse nobis autem, quo assumenda? Animi repellat pariatur ad
+        nihil, alias harum in modi delectus l
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountian_behind = document.getElementById("mountian_behind");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let mountain = document.getElementById("mountain");
+      let header = document.querySelector("header");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountian_behind.style.top = value * 0.5 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        mountain.style.marginTop = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
